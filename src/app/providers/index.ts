@@ -1,4 +1,4 @@
-import { withProviders } from "./with-providers";
+import compose from "compose-function";
+import { withRouter } from "./with-router";
 
-export default withProviders;
-export * from "./with-router";
+export const withProviders = compose(withRouter);
